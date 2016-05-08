@@ -6,6 +6,10 @@ public class ChatServer implements Runnable{
 	
 	private ChatServerThread clients[] = new ChatServerThread[50];
 	private ServerSocket server = null;
+	
+	/**
+	 * this Variable should be changed to public in order to let the unit testing examines thread information
+	 */
 	private Thread       thread = null;
 	private int clientCount = 0;
 
